@@ -32,13 +32,17 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
             DOMINE O <br />
-            <span className="text-black bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 px-2">PORTUGUÊS</span> <br />
+            <span className="relative inline-block text-yellow-500">
+              PORTUGUÊS
+              <svg className="absolute w-full h-3 -bottom-2 left-0 text-yellow-500" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.00025 5.5C14.5002 8 22.0002 2.5 34.0002 5.5C46.0002 8.5 53.0002 2.5 65.0002 5.5C77.0002 8.5 84.0002 2.5 96.0002 5.5C108.0002 8.5 115.0002 2.5 127.0002 5.5C139.0002 8.5 146.0002 2.5 158.0002 5.5C170.0002 8.5 177.0002 2.5 189.0002 5.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
+            </span> <br />
             PARA CONCURSOS
           </h1>
           
           <p className="text-lg text-gray-400 leading-relaxed max-w-lg font-light">
-            Faça parte de um grupo que transforma o português em vantagem real. 
-            Aprenda gramática, interpretação e redação de forma objetiva e estratégica.
+            Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação eredação de forma objetiva e estratégica.
           </p>
           
           <div className="flex items-center gap-4 text-sm text-gray-500">
