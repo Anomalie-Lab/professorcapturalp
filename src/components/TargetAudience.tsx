@@ -52,9 +52,9 @@ const TargetAudience = () => {
             Se você quer estudar com <span className='text-white font-semibold'>"maldade de prova"</span> e focar apenas no que realmente importa, você está no lugar certo.
           </p>
           
-          <button className="bg-white hover:bg-gray-100 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 cursor-pointer flex items-center gap-2 shadow-lg shadow-white/5 hover:shadow-white/10 group">
+          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 cursor-pointer flex items-center gap-2 shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/30 group uppercase">
             Quero dominar o português
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5" />
           </button>
         </div>
 
