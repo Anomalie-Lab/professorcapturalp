@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, Target, Shield, Brain, Zap } from 'lucide-react';
 
 const LearningOutcomes = () => {

@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const TargetAudience = () => {
   const audience = [

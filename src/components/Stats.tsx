@@ -1,4 +1,3 @@
-import React from 'react';
 import { PlayCircle, Users, Clock } from 'lucide-react';
 
 const Stats = () => {

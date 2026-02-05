@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, PlayCircle, Users, Clock, User, Phone, Mail, Lock, Trophy } from 'lucide-react';
+import { ArrowRight, PlayCircle, Users, Clock, User, Phone, Mail, Lock } from 'lucide-react';
 
 const Hero = () => {
   const stats = [

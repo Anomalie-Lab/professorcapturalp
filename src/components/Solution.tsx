@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
 const Solution = () => {
@@ -76,7 +75,7 @@ const Solution = () => {
           
           <div className="pl-6 border-l-2 border-yellow-500">
             <p className="text-gray-400 italic font-light">
-              "Há mais de 10 anos ajudando candidatos a evoluir em provas reais."
+              "Há mais de <span className='font-semibold text-white'>10 anos</span> ajudando candidatos a evoluir em provas reais."
             </p>
           </div>
         </div>
