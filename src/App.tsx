@@ -5,6 +5,7 @@ import TargetAudience from './components/TargetAudience';
 import Instructor from './components/Instructor';
 import LearningOutcomes from './components/LearningOutcomes';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Instructor />
       <LearningOutcomes />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

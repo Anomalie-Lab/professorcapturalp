@@ -28,8 +28,8 @@ const Stats = () => {
               <div className="mb-5 p-4 bg-yellow-500/10 rounded-full border border-yellow-500/20">
                 {stat.icon}
               </div>
-              <h4 className="text-4xl font-bold text-white mb-2 tracking-tight">{stat.value}</h4>
-              <p className="text-gray-400 font-medium uppercase tracking-widest text-xs">{stat.label}</p>
+              <h4 className="text-4xl font-bold text-white mb-4 tracking-tight">{stat.value}</h4>
+              <p className="text-gray-300 font-medium uppercase tracking-widest text-xs">{stat.label}</p>
             </div>
           ))}
         </div>

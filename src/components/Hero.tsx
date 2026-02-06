@@ -1,141 +1,109 @@
-import { ArrowRight, PlayCircle, Users, Clock, User, Phone, Mail, Lock } from 'lucide-react';
+import { PlayCircle, Users, Clock, ArrowRight } from 'lucide-react';
+import Counter from './Counter';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const stats = [
     {
-      icon: <PlayCircle className="w-8 h-8 text-yellow-500" />,
+      icon: <PlayCircle className="w-10 h-10 text-white" />,
       value: "+200",
       label: "Aulas Gravadas"
     },
     {
-      icon: <Users className="w-8 h-8 text-yellow-500" />,
+      icon: <Users className="w-10 h-10 text-white" />,
       value: "+10.000",
       label: "Alunos Aprovados"
     },
     {
-      icon: <Clock className="w-8 h-8 text-yellow-500" />,
+      icon: <Clock className="w-10 h-10 text-white" />,
       value: "+200h",
       label: "de Conteúdo"
     }
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-4 md:px-8 lg:px-16 min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section className="bg-black bg-[url('/Prancheta%202.png')] md:bg-[url('/Prancheta%201.png')] bg-cover bg-center bg-no-repeat text-white pt-8 md:pt-12 pb-0 px-4 md:px-8 lg:px-16 min-h-screen flex flex-col relative overflow-hidden">
       
-      <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-        <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-yellow-500 text-xs font-semibold tracking-widest uppercase">
-            <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-pulse"></span>
-            Método Exclusivo
-          </div>
+      <div className="max-w-7xl mx-auto w-full relative z-10 flex-grow flex flex-col">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 flex-grow">
           
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
-            DOMINE O <br />
-            <span className="relative inline-block text-yellow-500">
-              PORTUGUÊS
-              <svg className="absolute w-full h-3 -bottom-2 left-0 text-yellow-500" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.00025 5.5C14.5002 8 22.0002 2.5 34.0002 5.5C46.0002 8.5 53.0002 2.5 65.0002 5.5C77.0002 8.5 84.0002 2.5 96.0002 5.5C108.0002 8.5 115.0002 2.5 127.0002 5.5C139.0002 8.5 146.0002 2.5 158.0002 5.5C170.0002 8.5 177.0002 2.5 189.0002 5.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-              </svg>
-            </span> <br />
-            PARA CONCURSOS
-          </h1>
-          
-          <p className="text-lg text-gray-400 leading-relaxed max-w-lg font-light">
-            Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação eredação de forma objetiva e estratégica.
-          </p>
-          
-          <div className="flex items-center gap-4 text-sm text-gray-500">
-             <div className="h-px bg-zinc-800 flex-1"></div>
-             <div className="relative">
-                <p className="italic font-medium text-white relative z-10">Mesmo começando do zero</p>
-                <svg className="absolute w-full h-3 -bottom-2 left-0 text-yellow-500" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.00025 5.5C14.5002 8 22.0002 2.5 34.0002 5.5C46.0002 8.5 53.0002 2.5 65.0002 5.5C77.0002 8.5 84.0002 2.5 96.0002 5.5C108.0002 8.5 115.0002 2.5 127.0002 5.5C139.0002 8.5 146.0002 2.5 158.0002 5.5C170.0002 8.5 177.0002 2.5 189.0002 5.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-                </svg>
-             </div>
-          </div>
-        </div>
-
-        <div className="bg-zinc-900 border border-zinc-800 p-8 md:p-10 rounded-3xl shadow-2xl relative overflow-hidden group hover:border-zinc-700 transition-colors duration-500">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600"></div>
-          
-          <div className="mb-8">
-            <h3 className="text-xl font-bold text-white mb-2 uppercase">Garanta sua vaga</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Preencha seus dados para entrar no <span className="text-white font-medium">grupo exclusivo</span> e receber todas as informações.
-            </p>
-          </div>
-          
-          <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-            <div className="space-y-1.5">
-              <label htmlFor="name" className="text-xs font-medium text-gray-400 uppercase tracking-wider ml-1">Nome completo</label>
-              <div className="relative group">
-                <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-yellow-500 transition-colors duration-300" />
-                <input 
-                  type="text" 
-                  id="name"
-                  placeholder="Digite seu nome" 
-                  className="w-full pl-12 pr-4 py-3.5 bg-black border border-zinc-800 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 text-white placeholder-zinc-600 transition-all duration-300"
-                />
-              </div>
-            </div>
-            
-            <div className="space-y-1.5">
-              <label htmlFor="whatsapp" className="text-xs font-medium text-gray-400 uppercase tracking-wider ml-1">WhatsApp</label>
-              <div className="relative group">
-                <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-yellow-500 transition-colors duration-300" />
-                <input 
-                  type="tel" 
-                  id="whatsapp"
-                  placeholder="(DDD) 99999-9999" 
-                  className="w-full pl-12 pr-4 py-3.5 bg-black border border-zinc-800 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 text-white placeholder-zinc-600 transition-all duration-300"
-                />
-              </div>
-            </div>
-            
-            <div className="space-y-1.5">
-              <label htmlFor="email" className="text-xs font-medium text-gray-400 uppercase tracking-wider ml-1">E-mail</label>
-              <div className="relative group">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 group-focus-within:text-yellow-500 transition-colors duration-300" />
-                <input 
-                  type="email" 
-                  id="email"
-                  placeholder="seu@email.com" 
-                  className="w-full pl-12 pr-4 py-3.5 bg-black border border-zinc-800 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 text-white placeholder-zinc-600 transition-all duration-300"
-                />
-              </div>
-            </div>
-            
-            <button 
-              type="submit" 
-              className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-6 rounded-xl transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 mt-4 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20"
+          <div className="flex flex-col gap-12 justify-start pb-12 lg:pb-0 pt-12 lg:pt-0 text-center lg:text-left">
+            <motion.div 
+              className="space-y-8"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              ENTRAR NO GRUPO
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            
-            <div className="flex items-center justify-center gap-2 mt-8 text-zinc-400">
-              <Lock className="w-3 h-3" />
-              <p className="text-[10px] uppercase tracking-widest">
-                Seus dados estão 100% seguros
+              <img 
+                src="/logo2.png" 
+                alt="Português Operacional" 
+                className="w-24 md:w-32 h-auto drop-shadow-xl block mx-auto lg:mx-0 lg:-ml-10" 
+              />
+              
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+                DOMINE O <br />
+                <span className="relative inline-block text-yellow-500 font-chawp">
+                  PORTUGUÊS
+                </span> <br />
+                PARA CONCURSOS
+              </h1>
+              
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg font-light mx-auto lg:mx-0">
+                Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação eredação de forma objetiva e estratégica.
               </p>
-            </div>
-          </form>
-        </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-        {stats.map((stat, index) => (
-          <div key={index} className="flex flex-col items-center justify-center text-center p-8 rounded-2xl bg-black border border-zinc-800 hover:border-yellow-500/30 transition-colors duration-300 group">
-            <div className="mb-5 p-4 bg-yellow-500/5 rounded-full border border-yellow-500/10 group-hover:bg-yellow-500/10 transition-colors">
-              {stat.icon}
+              <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-6">
+                <button className="w-full md:w-auto bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20 whitespace-nowrap">
+                  QUERO COMEÇAR AGORA
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+                
+                <div className="flex items-center gap-3 text-sm text-gray-500">
+                   <div className="h-px bg-zinc-800 w-8 md:w-12"></div>
+                   <p className="italic font-medium text-white font-chawp whitespace-nowrap">Mesmo começando do zero</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <div className="grid grid-cols-3 gap-2 md:gap-8">
+              {stats.map((stat, index) => (
+                <motion.div 
+                  key={index} 
+                  className="flex flex-col items-center justify-center text-center p-2 md:p-4"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.5, delay: 0.4 + (index * 0.2) }}
+                >
+                  <div className="mb-2 md:mb-3 flex justify-center text-white">
+                    {/* Responsive icon size */}
+                    <div className="[&>svg]:w-8 [&>svg]:h-8 md:[&>svg]:w-10 md:[&>svg]:h-10">
+                      {stat.icon}
+                    </div>
+                  </div>
+                  <h4 className="text-2xl md:text-5xl font-bold text-white mb-1 md:mb-2 tracking-tight font-chawp drop-shadow-lg">
+                    <Counter value={stat.value} />
+                  </h4>
+                  <p className="text-gray-300 font-bold uppercase tracking-wider text-[10px] md:text-sm font-chawp leading-tight">{stat.label}</p>
+                </motion.div>
+              ))}
             </div>
-            <h4 className="text-4xl font-bold text-white mb-2 tracking-tight">{stat.value}</h4>
-            <p className="text-gray-400 font-medium uppercase tracking-widest text-xs">{stat.label}</p>
           </div>
-        ))}
-      </div>
-      
+
+          <div className="relative flex justify-center lg:justify-end items-end h-full">
+            <motion.img 
+              src="/professor.png" 
+              alt="Professor" 
+              className="w-full max-w-[500px] lg:max-w-full object-contain drop-shadow-2xl"
+              initial={{ opacity: 0, y: 100, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            />
+          </div>
+
+        </div>
       </div>
     </section>
   );

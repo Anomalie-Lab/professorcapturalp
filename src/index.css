@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Chawp';
+  src: url('./assets/fonts/chawp/chawp.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-chawp: 'Chawp', sans-serif;
+}
+
+.font-glitch {
+  position: relative;
+  font-family: 'Chawp', sans-serif;
+  color: white;
+}
+
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
