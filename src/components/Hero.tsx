@@ -29,7 +29,7 @@ const Hero = () => {
           
           <div className="flex flex-col gap-12 justify-start pb-12 lg:pb-0 pt-12 lg:pt-0 text-center lg:text-left">
             <motion.div 
-              className="space-y-8"
+              className="space-y-4"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
@@ -38,7 +38,7 @@ const Hero = () => {
               <img 
                 src="/logo2.png" 
                 alt="Português Operacional" 
-                className="w-24 md:w-32 h-auto drop-shadow-xl block mx-auto lg:mx-0 lg:-ml-10" 
+                className="w-40 md:w-56 h-auto drop-shadow-xl block mx-auto lg:mx-0 lg:-ml-8 -mb-8 md:-mb-12" 
               />
               
               <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
@@ -49,7 +49,7 @@ const Hero = () => {
                 PARA CONCURSOS
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg font-light mx-auto lg:mx-0">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg font-light mx-auto lg:mx-0 mb-10">
                 Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação eredação de forma objetiva e estratégica.
               </p>
 

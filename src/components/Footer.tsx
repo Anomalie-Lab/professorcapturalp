@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="bg-black bg-[url('/Prancheta%202.png')] md:bg-[url('/Prancheta%201.png')] bg-cover bg-center bg-no-repeat pt-20 pb-10 px-4 md:px-8 border-t border-zinc-800">
       <div className="max-w-4xl mx-auto text-center">
         <FadeInSection direction="up">
-          <div className="flex justify-center mb-4">
-             <img src="/logo2.png" alt="Português Operacional" className="w-24 md:w-32 h-auto opacity-90" />
+          <div className="flex justify-center">
+             <img src="/logo2.png" alt="Português Operacional" className="w-40 md:w-56 h-auto opacity-90" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 uppercase">
             Entre agora mesmo no nosso <br />

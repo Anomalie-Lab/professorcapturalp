@@ -18,11 +18,6 @@ const Instructor = () => {
                 <div className="absolute inset-0 "></div>
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-zinc-900 to-transparent opacity-80"></div>
                 
-                <img 
-                  src="/logo2.png" 
-                  alt="Logo" 
-                  className="absolute bottom-16 right-6 w-32 opacity-90 drop-shadow-md"
-                />
             </div>
             
             <img 
