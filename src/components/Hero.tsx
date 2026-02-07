@@ -50,7 +50,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg font-light mx-auto lg:mx-0 mb-10">
-                Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação eredação de forma objetiva e estratégica.
+                Faça parte de um grupo que transforma o português em vantagem real. Aprenda gramática, interpretação e redação de forma objetiva e estratégica.
               </p>
 
               <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-6">
